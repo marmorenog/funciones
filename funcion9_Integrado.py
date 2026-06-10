@@ -5,7 +5,7 @@ def validar_nota(nota):
         return True
     return False
 
-def agregar_nota(notas,alumno,nota):
+def agregar_nota(notas:list,alumno,nota):
     if not validar_nota(nota):
         print("Nota inválida. Debe estar entre 1.0 y 7.0")
     notas.append({"alumno":alumno, "nota":nota})
